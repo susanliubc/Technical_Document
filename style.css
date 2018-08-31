@@ -1,0 +1,129 @@
+header {
+    padding: 20px 15px;
+    margin: 20px 30px;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: arial;
+  }
+  
+  
+  #navbar {
+    position: fixed;
+    min-width: 290px;
+    width: 30%;
+    height: 100%;
+    left: 0px;
+    background-color: rgb(231, 244, 254);
+  }
+  
+  #main-doc {
+    position: absolute;
+    width: 69%;
+    margin-left: 320px;
+  }
+  
+  #nav-header {
+    text-align: center;
+    padding: 0px 10px;
+    margin: 10px 15px;
+    font-family: arial;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  #sidenav a:hover,#sidenav a:focus {
+    color:#000000;
+    background-color:#cccccc;
+  }
+  
+  #sidenav a.active {
+    background-color:#4CAF50;
+    color:#ffffff
+  }
+  
+  #leftmenuinner {
+    height: 85%;
+    width: 100%;
+    overflow-y: scroll;
+    padding-top: 0px;
+    border: 1px solid;
+  }
+  
+  article {
+    margin: 15px;
+  }
+  
+  p {
+    padding: 10px 20px;
+    margin: 10px 20px;
+  }
+  
+  li {
+    margin: 15px 0px 0px 55px;
+  }
+  
+  pre {
+    margin: 8px 40px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    overflow: auto;
+    color: #ff4d88;
+    font-size: 1.1em;
+  }
+  code {
+    font-size: 18px;
+    font-family: Helvetica;
+    color: #ff4d88;
+    font-size: 1.1em;
+  }
+    
+  
+  @media (max-width: 800px) {
+    #navbar {
+      position: absolute;
+      top: 0px;
+      padding: 0px;
+      margin: 0px;
+      width: 100%;
+      max-height: 285px;
+      bottom: 20px;
+    }
+        
+    #leftmenuinner {
+      height: 78%;
+    }
+    
+    #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 300px;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    #navbar {
+      max-height: 285px;
+    }
+    
+    #leftmenuinner {
+      height: 78%;
+    }
+    
+    #main-doc {
+      margin-left: -10px;
+      width: 100%;
+    }
+    
+    code{
+      margin-left: 20px;
+      width: 100%;
+      padding: 2px;
+      display: block;
+      text-align: left;
+      margin-right: 20px;
+      font-size: 10px;
+      min-width: 233px;
+    }
+  }
+  
